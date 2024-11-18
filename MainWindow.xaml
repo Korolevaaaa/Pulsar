@@ -1,0 +1,15 @@
+﻿<Window x:Class="Pulsar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Пульсар" Height="400" Width="400">
+    <Grid>
+        <Ellipse x:Name="PulsarEllipse" Width="200" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Ellipse.Fill>
+                <RadialGradientBrush x:Name="PulsarGradient" GradientOrigin="0.5, 0.5" Center="0.5, 0.5" RadiusX="0.5" RadiusY="0.5">
+                    <GradientStop Offset="0" Color="Yellow"/>
+                    <GradientStop Offset="1" Color="Transparent"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+    </Grid>
+</Window>
